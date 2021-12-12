@@ -4,12 +4,12 @@ import { useState } from 'react';
 import '../App.css'
 
 const Calendar1 = () => {
-    const [value, onChange] = useState(new Date());
+    const [date, setDate] = useState(new Date());
 
     return (
         <div>
-            <Calendar onChange={onChange} value = {value} />
-            <div className='day'>{value.toDateString()}</div>
+            <Calendar onChange={setDate} value = {date} />
+            <div className='day'>{date.toDateString()}</div>
         </div>
         
     
