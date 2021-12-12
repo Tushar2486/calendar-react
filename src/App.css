@@ -24,7 +24,9 @@
 }
 
 .day {
-  margin-top: 40px;
+  margin: auto;
+  width: 300px;
+  margin-top: 50px;
   font-size: 2rem;
   font-weight: 500;
   color: #fff;
@@ -37,4 +39,11 @@
       0 0 92px #f09,
       0 0 102px #f09,
       0 0 151px #f09;
-}
+      border: 0.2rem solid #fff;
+      box-shadow: 0 0 .2rem #fff,
+                  0 0 .2rem #fff,
+                  0 0 2rem #bc13fe,
+                  0 0 0.8rem #bc13fe,
+                  0 0 2.8rem #bc13fe,
+                  inset 0 0 1.3rem #bc13fe;
+    }
