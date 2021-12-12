@@ -8,7 +8,12 @@ const Calendar1 = () => {
 
     return (
         <div>
-            <Calendar onChange={setDate} value = {date} />
+            <Calendar 
+            onChange={setDate}
+             value = {date}
+             maxDate={new Date((date.getFullYear()+10),(date.getMonth()+1),(date.getDay()))}
+             minDate={new Date((date.getFullYear()-10),(date.getMonth()+1),(date.getDay()))}
+             />
             <div className='day'>{date.toDateString()}</div>
         </div>
         
